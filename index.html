@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desesperanza - Tienda en Línea</title>
+    <!-- Font Awesome para iconos -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+
+    <!-- Barra de Navegación -->
+    <nav class="navbar">
+        <h1 class="navbar-logo">Desesperanza</h1>
+        <ul class="navbar-menu">
+            <li><a href="#"><i class="fas fa-home"></i> Inicio</a></li>
+            <li><a href="#"><i class="fas fa-box-open"></i> Productos</a></li>
+            <li><a href="#"><i class="fas fa-tags"></i> Ofertas</a></li>
+            <li><a href="#"><i class="fas fa-shopping-cart"></i> Carrito</a></li>
+            <li><a href="#"><i class="fas fa-envelope"></i> Contacto</a></li>
+        </ul>
+    </nav>
+
+    <!-- Encabezado Principal -->
+    <header class="header">
+        <h2>Bienvenidos a Desesperanza</h2>
+        <p>Tu lugar para encontrar los mejores productos</p>
+    </header>
+
+    <!-- Carrusel de Productos -->
+    <section class="carousel-container">
+        <button class="carousel-button left" onclick="moveCarousel(-1)">&#10094;</button>
+        <div class="carousel">
+            <!-- Productos -->
+            <div class="product-card">
+                <img src="imagenes/vari.jpeg" alt="Producto 1">
+                <h3>Variado</h3>
+                <p>Pan variado para botanear</p>
+                <p class="price" data-price="58">$58.00</p>
+                <input type="number" min="1" value="1" class="quantity-input">
+                <button class="add-to-cart"><i class="fas fa-cart-plus"></i> Agregar al Carrito</button>
+            </div>
+            <div class="product-card">
+                <img src="imagenes/skiki.jpeg" alt="Producto 2">
+                <h3>Skibidi pan</h3>
+                <p> pan de skibidi campesino</p>
+                <p class="price" data-price="15.00">$15.000</p>
+                <input type="number" min="1" value="1" class="quantity-input">
+                <button class="add-to-cart"><i class="fas fa-cart-plus"></i> Agregar al Carrito</button>
+            </div>
+            <div class="product-card">
+                <img src="IMAGENES/kuer.jpeg" alt="Producto 3">
+                <h3>cuernito </h3>
+                <p>cuernito para desayunar</p>
+                <p class="price" data-price="40.00">$40.00</p>
+                <input type="number" min="1" value="1" class="quantity-input">
+                <button class="add-to-cart"><i class="fas fa-cart-plus"></i> Agregar al Carrito</button>
+            </div>
+            <div class="product-card">
+                <img src="imagenes/bolill.jpeg" alt="Producto 4">
+                <h3>bolillito</h3>
+                <p>pa tortiar</p>
+                <p class="price" data-price="2.50">$2.50</p>
+                <input type="number" min="1" value="1" class="quantity-input">
+                <button class="add-to-cart"><i class="fas fa-cart-plus"></i> Agregar al Carrito</button>
+            </div>
+            <div class="product-card">
+                <img src="imagenes/dona.jpeg" alt="Producto 5">
+                <h3>homer dona</h3>
+                <p>La dona de homer</p>
+                <p class="price" data-price="20.00">$20.00</p>
+                <input type="number" min="1" value="1" class="quantity-input">
+                <button class="add-to-cart"><i class="fas fa-cart-plus"></i> Agregar al Carrito</button>
+            </div>
+            <div class="product-card">
+                <img src="imagenes/pm.jpeg" alt="Producto 6">
+                <h3>Pan de muerto</h3>
+                <p>Pan de fallecido hecho con sus huesos</p>
+                <p class="price" data-price="25.00">$25.00</p>
+                <input type="number" min="1" value="1" class="quantity-input">
+                <button class="add-to-cart"><i class="fas fa-cart-plus"></i> Agregar al Carrito</button>
+            </div>
+        </div>
+        <button class="carousel-button right" onclick="moveCarousel(1)">&#10095;</button>
+    </section>
+
+    <!-- Botón de Pago -->
+    <div class="checkout-container">
+        <button class="checkout" onclick="showCart()"><i class="fas fa-credit-card"></i> Finalizar Compra</button>
+    </div>
+
+    <!-- Modal de Carrito -->
+    <div id="cartModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeCart()">&times;</span>
+            <h2>Confirmar Pedido</h2>
+            <div id="cartItems"></div>
+            <button class="confirm-order" onclick="confirmOrder()">Confirmar Pedido</button>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>© 2024 Desesperanza. Todos los derechos reservados.</p>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="javascript.js"></script>
+
+</body>
+</html>

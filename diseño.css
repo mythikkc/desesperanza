@@ -1,0 +1,153 @@
+/* Estilos Generales */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background: url('../IMAGENES/pan_bk.jpg') no-repeat center center fixed;
+    background-size: cover;
+    overflow: scroll;
+  }
+  
+  nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    background: rgba(0, 0, 0, 0.7);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 90px;
+    z-index: 10;
+  }
+  
+  nav .logo {
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+  }
+  
+  nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+  }
+  
+  nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+  }
+  
+  nav ul li a:hover {
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 5px;
+    padding: 8px;
+  }
+  
+  .container {
+    margin-top: 120px;
+  }
+  
+  .table {
+    background-color: #ffffff;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+  }
+  
+  .table thead {
+    background-color: #343a40;
+    color: #ffffff;
+  }
+  
+  .table-striped tbody tr:nth-of-type(odd) {
+    background-color: #f8f9fa;
+  }
+  
+  .table-bordered {
+    border: 1px solid #dee2e6;
+  }
+  
+  .btn-warning {
+    background-color: #ffc107;
+    color: black;
+    border: none;
+  }
+  
+  .btn-danger {
+    background-color: #dc3545;
+    color: white;
+    border: none;
+  }
+  
+  .btn-warning:hover,
+  .btn-danger:hover {
+    opacity: 0.85;
+  }
+  
+  .btn-primary {
+    background-color: #004d40;
+    border: none;
+  }
+  
+  .btn-primary:hover {
+    background-color: #00695c;
+  }
+  
+  .modal-content {
+    border-radius: 15px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    background-color: #ffffff;
+  }
+  
+  .modal-header {
+    background-color: #343a40;
+    color: white;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+  }
+  
+  .modal-footer {
+    border-top: none;
+  }
+  
+  .form-control {
+    border-radius: 8px;
+    border: 1px solid #dee2e6;
+    transition: all 0.3s ease;
+  }
+  
+  .form-control:focus {
+    border-color: #004d40;
+    box-shadow: 0 0 5px rgba(0, 77, 64, 0.5);
+  }
+  
+  .footer {
+    background: rgba(0, 0, 0, 0.8);
+    color: white;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+  }
+  
+  button[data-toggle="modal"] {
+    margin-top: 15px;
+    background-color: #004d40;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    padding: 10px 20px;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+  }
+  
+  button[data-toggle="modal"]:hover {
+    background-color: #00695c;
+  }
+  
